@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "653075389949",
+    "firebase_url": "https://proyecto-parcial.firebaseio.com",
+    "project_id": "proyecto-parcial",
+    "storage_bucket": "proyecto-parcial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653075389949:android:91d416972c4a8c3e",
+        "android_client_info": {
+          "package_name": "com.android.proyectandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653075389949-kt5omvcp1qpu2hh5f9nb4jc6kmghe96c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkZTSNMFlczksX5gIX2rGU-jqmMffVsxw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

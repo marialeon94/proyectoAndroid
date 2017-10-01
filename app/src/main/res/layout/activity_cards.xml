@@ -1,0 +1,50 @@
+
+    <!-- A CardView that contains a TextView -->
+
+    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+app:cardBackgroundColor="@color/common_google_signin_btn_text_dark_default"
+    app:cardElevation="2dp"
+app:cardUseCompatPadding="true"
+        app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:text=""
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox"
+            android:layout_weight="0.02" />
+
+        <TextView
+        android:id="@+id/nombreTarea"
+            android:textColor="@color/colorAccent"
+        android:layout_width="158dp"
+        android:layout_height="43dp"
+            android:layout_weight="0.01" />
+
+        <TextView
+            android:id="@+id/fechaTarea"
+            android:textColor="@color/colorAccent"
+            android:layout_width="113dp"
+            android:layout_height="97dp" />
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
