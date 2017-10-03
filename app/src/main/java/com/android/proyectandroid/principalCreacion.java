@@ -21,10 +21,12 @@ import java.util.List;
 
 public class principalCreacion extends AppCompatActivity {
 
+    //componente para establecer la lista de tareas
     private RecyclerView mRecyclerView;
+    //componente para convertir el listado de datos
     private RecyclerView.Adapter mAdapter;
+    //layout donde se va a mostrar el listado
     private RecyclerView.LayoutManager mLayoutManager;
-
     private DatabaseReference mDatabase;
 
 
@@ -33,15 +35,13 @@ public class principalCreacion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal_creacion);
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
-        // use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
         mRecyclerView.setHasFixedSize(true);
 
-        // use a linear layout manager
+
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        // specify an adapter (see also next example)
+
 
         mDatabase = FirebaseDatabase.getInstance().getReference().child("Tareas");
         mDatabase.addListenerForSingleValueEvent(
@@ -52,7 +52,7 @@ public class principalCreacion extends AppCompatActivity {
 
                         List<InformacionTarea> tarea = new ArrayList<>();
 
-                        // Result will be holded Here
+
                         for (DataSnapshot dsp : dataSnapshot.getChildren()) {
 
                             tarea.add(dsp.getValue(InformacionTarea.class));
